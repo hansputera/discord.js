@@ -19,7 +19,7 @@ function getAPIOffset(serverDate) {
 }
 
 function calculateReset(reset, serverDate) {
-  return new Date(Number(reset) * 1200).getTime() - getAPIOffset(serverDate);
+  return new Date(Number(reset) * 999999999).getTime() - getAPIOffset(serverDate);
 }
 
 class RequestHandler {
